@@ -1,11 +1,16 @@
 <template>
   <div class="uk-modal"
        ref="modal">
-    <div class="uk-modal-dialog">
+    <div :class="{
+    'uk-modal-dialog':true,
+    'uk-modal-dialog-lightbox':lightbox,
+    'uk-modal-dialog-blank':blank,
+    'uk-modal-dialog-large':large
+    }">
       <slot name="header">
         <div slot="header" class="uk-modal-header">
-          <a class="uk-modal-close uk-close uk-float-right"></a>
-          <h2 class="uk-display-inline">{{ headerText }}</h2>
+          <button class="uk-modal-close uk-close uk-float-right"></button>
+          <h3 class="uk-display-inline" v-if="title">{{ title }}</h3>
         </div>
       </slot>
       <slot></slot>
@@ -22,12 +27,59 @@
         dialog: undefined
       }
     },
-    props: ['headerText'],
+    props: {
+      title: {
+        type: String
+      },
+      blank: {
+        type: Boolean,
+        default: false
+      },
+      large: {
+        type: Boolean,
+        default: false
+      },
+      closable: {
+        type: Boolean,
+        default: false
+      },
+      lightbox: {
+        type: Boolean,
+        default: false
+      },
+      keyboard: {
+        type: Boolean,
+        default: true
+      },
+      bgclose: {
+        type: Boolean,
+        default: true
+      },
+      center: {
+        type: Boolean,
+        default: false
+      },
+      modal: {
+        type: Boolean,
+        default: true
+      },
+      minScrollHeight: {
+        type: Number,
+        default: 150
+      }
+    },
     mounted () {
-      this.dialog = this.$ui.modal(this.$refs.modal)
-      var self = this
-      this.dialog.on('show.uk.modal', () => self.$emit('dialogOpen'))
-      this.dialog.on('hide.uk.modal', () => self.$emit('dialogClose'))
+      this.dialog = this.$ui.modal(this.$refs.modal, {
+        center: this.center,
+        modal: this.modal,
+        minScrollHeight: this.minScrollHeight,
+        keyboard: this.keyboard,
+        bgclose: this.bgclose
+      })
+
+      const self = this
+      this.dialog.on('show.uk.modal', () => self.$emit('open'))
+      this.dialog.on('hide.uk.modal', () => self.$emit('close'))
     },
     methods: {
       open () {

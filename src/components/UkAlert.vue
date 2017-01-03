@@ -1,9 +1,11 @@
 <template>
   <div class="uk-alert" data-uk-alert>
-    <a href="" class="uk-alert-close uk-close"></a>
-    <p>...</p>
+    <a href="" class="uk-alert-close uk-close" v-if="closable"></a>
+    <slot></slot>
   </div>
 </template>
 <script>
-  export default {}
+  export default {
+      props:['closable']
+  }
 </script>

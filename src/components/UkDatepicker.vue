@@ -6,7 +6,6 @@
 <script>
   import 'uikit/dist/js/components/datepicker'
   import 'uikit/dist/css/components/datepicker.almost-flat.css'
-  import _ from 'lodash'
 
   export default {
     name: 'UkDatePicker',
