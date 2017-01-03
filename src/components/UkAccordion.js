@@ -1,0 +1,29 @@
+export const UkSection = {
+  render (h) {
+
+  }
+}
+
+export const UkAccordion = {
+  name: 'UkAccordion',
+  components: {UkSection},
+  data () {
+    return {
+      sections: []
+    }
+  },
+  beforeMount () {
+    this.sections = this.$slots.default.filter(node =>
+      node.componentOptions && node.componentOptions.tag === 'uk-section'
+    ).map((node, index) => {
+      const data = node.componentOptions.propsData
+      data.index = index
+      return node
+    })
+  },
+  render (h) {
+    return <div class={{}}>
+
+    </div>
+  }
+}
