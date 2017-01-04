@@ -1,11 +1,10 @@
-import UIKit from 'src/vue-uikit'
+import VueUI from 'components'
 import Vue from 'vue'
-import Pager from 'components/pager'
 import {getVM} from '../helpers'
 
-Vue.use(UIKit)
+Vue.use(VueUI)
 
-describe('pager', () => {
+describe('UKPager', () => {
   it('应该输出正确的分页器所需的网页结构', () => {
     let expected = {
       items: 40,
@@ -19,10 +18,10 @@ describe('pager', () => {
     // 所以此处无需引入就可以直接调用
     // 2. 触发pagechanged 我们就要在 render 语法中加入 'on-' 的前缀引用事件
     let pageChangedHandler = sinon.spy()
-    let vm = getVM(h => (<pager items={expected.items}
-                                size={expected.size}
-                                on-pagechanged={ pageChangedHandler }>
-    </pager>), {Pager})
+    let vm = getVM(h => <uk-pager items={expected.items}
+                                  size={expected.size}
+                                  on-pagechanged={ pageChangedHandler }>
+    </uk-pager>)
 
     let pageCount = parseInt(vm.$el.querySelector('ul>li:last-child>a').getAttribute('data-page'))
 

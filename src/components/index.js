@@ -1,7 +1,7 @@
 import 'jquery'
 import 'uikit'
-// import 'uikit/dist/css/uikit.css'
 import 'uikit/dist/css/uikit.gradient.css'
+
 import UkIcon from './UkIcon'
 import UkButton from './UkButton'
 import UkButtonGroup from './UkButtonGroup'
@@ -13,6 +13,8 @@ import {UkTab, UkTabs} from './UkTabs'
 import UkHtmlEditor from './UkHtmlEditor'
 import UkAlert from './UkAlert.vue'
 import UkModal from './UkModal.vue'
+import UkPager from './UkPager'
+
 export default (Vue, options) => {
   const ui = window.UIkit
   // 向实例注入
@@ -39,4 +41,5 @@ export default (Vue, options) => {
   Vue.component('uk-html-editor', UkHtmlEditor)
   Vue.component('uk-alert', UkAlert)
   Vue.component('uk-modal', UkModal)
+  Vue.component('uk-pager',UkPager)
 }

@@ -1,21 +1,20 @@
-import UIKit from 'src/vue-uikit'
+import VueUI from 'components'
 import Vue from 'vue'
-import HtmlEditor from 'components/htmleditor'
 import {getVM} from '../helpers'
-// import 'chance'
-Vue.use(UIKit)
 
-describe('htmleditor', () => {
+Vue.use(VueUI)
+
+describe('UKHtmlEditor', () => {
 
   it('应该在内容修时出发 change 事件', () => {
     const valueChangedHandler = sinon.spy()
     const originalContent = Chance().paragraph()
     const editingContent = Chance().paragraph()
 
-    let vm = getVM(h => (<html-editor value={originalContent}
+    let vm = getVM(h => <uk-html-editor value={originalContent}
                                       on-change={valueChangedHandler}>
 
-    </html-editor>), {HtmlEditor})
+    </uk-html-editor>)
     let editor = vm.$children[0]
     // 取得HtmlEditor生成的textarea原素
     let textarea = editor.$el.querySelector('textarea')
