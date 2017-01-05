@@ -1,3 +1,4 @@
+import '../assets/common.less'
 export default {
   name: 'UkButton',
   props: {

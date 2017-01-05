@@ -14,6 +14,7 @@ import UkHtmlEditor from './UkHtmlEditor'
 import UkAlert from './UkAlert.vue'
 import UkModal from './UkModal.vue'
 import UkPager from './UkPager'
+import UkBadge from './UkBadge.vue'
 
 export default (Vue, options) => {
   const ui = window.UIkit
@@ -30,6 +31,7 @@ export default (Vue, options) => {
   Vue.prototype.$uikit = window.UIKit
 
   Vue.component('uk-icon', UkIcon)
+  Vue.component('uk-badge', UkBadge)
   Vue.component('uk-button', UkButton)
   Vue.component('uk-button-group', UkButtonGroup)
   Vue.component('uk-panel', UkPanel)

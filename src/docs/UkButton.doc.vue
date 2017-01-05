@@ -44,11 +44,11 @@
     <uk-button :disabled="true">Disabled</uk-button>
 
     <h2>Sizing</h2>
-    <h3><strong>size</strong> attribute</h3>
+    <h3><strong>size</strong> 属性</h3>
     <table class="uk-table">
       <thead>
       <tr>
-        <th>example</th>
+        <th>示例</th>
         <th>size</th>
       </tr>
       </thead>
@@ -71,7 +71,7 @@
     <h2>Icon button</h2>
     <uk-button icon="search">Search</uk-button>
 
-    <h2>Button group</h2>
+    <h2>按钮组</h2>
 
     <div class="uk-flex">
       <div class="uk-width-1-3">

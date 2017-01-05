@@ -5,7 +5,7 @@ import {getVM} from '../helpers'
 Vue.use(VueUI)
 
 describe('UKPager', () => {
-  it('应该输出正确的分页器所需的网页结构', () => {
+  it('$mount()', () => {
     let expected = {
       items: 40,
       size: 5,

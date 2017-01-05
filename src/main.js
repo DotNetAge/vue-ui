@@ -14,6 +14,7 @@ import UkUploaderDoc from './docs/UkUploader.doc.vue'
 import PickersDoc from './docs/Pickers.vue'
 import UkButtonDoc from './docs/UkButton.doc.vue'
 import CodeBlock from './docs/CodeBlock.vue'
+import UkCommonDoc from './docs/Common.vue'
 
 Vue.use(VueUI)
 Vue.use(VueRouter)
@@ -28,7 +29,8 @@ const router = new VueRouter({
     {name: 'Tabs', path: '/examples/tabs', component: UkTabsDoc},
     {name: 'HtmlEditors', path: '/examples/html-editors', component: UkHtmlEditorDoc},
     {name: 'Buttons', path: '/examples/buttons', component: UkButtonDoc},
-    {name: 'Offcanvas', path: '/examples/offcanvas', component: UkOffcanvasDoc}
+    {name: 'Offcanvas', path: '/examples/offcanvas', component: UkOffcanvasDoc},
+    {name: 'Common', path: '/examples/common', component: UkCommonDoc}
   ]
 })
 
