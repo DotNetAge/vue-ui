@@ -17,4 +17,4 @@ import 'vue-ui/dist/'
 
 ## 在线示例
 
-![示例](https://dotnetage.github.io/vue-ui)
+[示例](https://dotnetage.github.io/vue-ui/)
