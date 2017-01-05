@@ -28,9 +28,10 @@
                 <li>
                   <router-link :to="{name:'Common'}">通用</router-link>
                 </li>
-
                 <li>
-
+                  <router-link :to="{name:'Forms'}">表单</router-link>
+                </li>
+                <li>
                   <router-link :to="{name:'Accordions'}">手风琴</router-link>
                 <li>
                   <router-link :to="{name:'Panels'}">面板</router-link>

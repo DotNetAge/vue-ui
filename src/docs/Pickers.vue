@@ -71,8 +71,8 @@
       </tbody>
     </table>
 
-    <h2>时间选择器 - Timepicker</h2>
 
+    <h2>时间选择器 - Timepicker</h2>
     <h3>示例</h3>
     <div class="uk-form">
       <uk-timepicker></uk-timepicker>
