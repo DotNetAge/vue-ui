@@ -50,8 +50,8 @@
     <h2>Header and footer</h2>
     <p></p>
 
-    <h2>Attributes</h2>
-    <table class="uk-table uk-table-striped">
+    <h2>属性</h2>
+    <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
         <th>Option</th>

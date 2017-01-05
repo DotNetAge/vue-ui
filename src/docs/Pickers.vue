@@ -9,7 +9,7 @@
     </div>
     <code-block>{{usages.basic}}</code-block>
     <h3>attributes</h3>
-    <table class="uk-table uk-table-striped uk-text-nowrap">
+    <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
         <th>Option</th>
@@ -80,7 +80,7 @@
     <code-block>{{usages.timepicker}}</code-block>
     <h3>attributes</h3>
     <div class="uk-overflow-container">
-      <table class="uk-table uk-table-striped uk-text-nowrap">
+      <table class="uk-table uk-table-striped uk-table-condensed">
         <thead>
         <tr>
           <th>Option</th>

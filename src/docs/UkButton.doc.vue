@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Button</h1>
+    <h1>按钮</h1>
 
-    <h2>Usage</h2>
+    <h2>用法</h2>
     <p>
       <uk-button>Default</uk-button>
     </p>
@@ -11,7 +11,7 @@
     </p>
 
     <h3><strong>color</strong> attribute</h3>
-    <table class="uk-table">
+    <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
         <th>example</th>
@@ -45,7 +45,7 @@
 
     <h2>Sizing</h2>
     <h3><strong>size</strong> 属性</h3>
-    <table class="uk-table">
+    <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
         <th>示例</th>
@@ -108,11 +108,11 @@
       return {
         usages: {
           basic: `<uk-button color="primary|success|danger"
-               size="mini|small|lager"
-               icon="search"
-               width="1-1"
-               :disabled="true|false"
-               :active="true|false">Button text
+       size="mini|small|lager"
+       icon="search"
+       width="1-1"
+       :disabled="true|false"
+       :active="true|false">按钮文字
 </uk-button>`
         }
       }

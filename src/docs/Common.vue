@@ -19,7 +19,7 @@
     <h3>大小</h3>
     <h3><strong>size</strong> 属性</h3>
     <p>可支持大中小三种图标尺寸，具体的<code>size</code>值如下所示</p>
-    <table class="uk-table">
+    <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
         <th>示例</th>
@@ -49,7 +49,7 @@
     </table>
 
     <h3>其它属性</h3>
-    <table class="uk-table">
+    <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
         <th>示例</th>
@@ -95,7 +95,7 @@
     <h3>示例</h3>
     <code-block>{{usages.badge.basic}}</code-block>
     <h3><strong>color</strong> 属性</h3>
-    <table class="uk-table">
+    <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
         <th>示例</th>

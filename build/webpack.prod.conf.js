@@ -16,7 +16,7 @@ var baseWebpackConfig = merge(require('./webpack.base.conf'), {
   },
   externals: {
     vue: 'vue',
-    uikit: 'uikit',
+    // uikit: 'uikit',
     jquery: 'jquery'
   },
   module: {
