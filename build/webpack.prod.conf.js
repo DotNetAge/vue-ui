@@ -34,7 +34,7 @@ var baseWebpackConfig = merge(require('./webpack.base.conf'), {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    new ExtractTextPlugin(utils.assetsPath('css/[name].css')),
+    new ExtractTextPlugin(utils.assetsPath('[name].css')),
     new webpack.BannerPlugin(config.build.banner, {
       raw: true,
       entryOnly: true
