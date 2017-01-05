@@ -1,9 +1,8 @@
 {
-  "name": "vueuikit",
+  "name": "v-uikit",
   "version": "1.0.0",
-  "description": "UIKit for vue2",
+  "description": "基于 UIKit 和 Vue2 开发的界面套件",
   "author": "Ray <csharp2002@hotmail.com>",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -11,7 +10,7 @@
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit"
   },
-  "main": "dist/vue-ui.common.js",
+  "main": "dist/v-uikit.common.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DotNetAge/vue-ui.git"

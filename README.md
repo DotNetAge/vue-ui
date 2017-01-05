@@ -5,15 +5,15 @@
 ## 安装
 
 ```
-$ npm i vue-ui -D
+$ npm i v-uikit -D
 ```
 
 ## 注册 VueUI
 
 ```js
 import Vue from 'vue'
-import VueUI from 'vue-ui'
-import 'vue-ui/dist/vue-ui.css'
+import VueUI from 'v-uikit'
+import 'v-uikit/dist/v-uikit.css'
 
 Vue.use(VueUI)
 ```
