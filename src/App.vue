@@ -5,7 +5,7 @@
         <a href="" class="uk-navbar-brand">Vue UI</a>
         <ul class="uk-navbar-nav">
           <li><a href="https://github.com/DotNetAge/vue-ui" target="_blank">Github</a></li>
-          <li><a href="https://www.npmjs.com/package/vue-ui">NPM</a></li>
+          <li><a href="https://www.npmjs.com/package/v-uikit">NPM</a></li>
         </ul>
         <div class="uk-navbar-flip">
           <ul class="uk-navbar-nav">
@@ -27,7 +27,10 @@
                 <li>
                 <li>
                   <router-link :to="{name:'Common'}">通用</router-link>
+                </li>
+
                 <li>
+
                   <router-link :to="{name:'Accordions'}">手风琴</router-link>
                 <li>
                   <router-link :to="{name:'Panels'}">面板</router-link>
