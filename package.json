@@ -1,6 +1,6 @@
 {
   "name": "v-uikit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于 UIKit 和 Vue2 开发的界面套件",
   "author": "Ray <csharp2002@hotmail.com>",
   "scripts": {

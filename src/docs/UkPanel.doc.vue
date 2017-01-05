@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Panel</h1>
+    <h1>面板</h1>
     <h2>Basic</h2>
     <h3>example</h3>
     <uk-panel title="panel header">

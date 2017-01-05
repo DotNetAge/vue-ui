@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Modal</h1>
-    <h2>Basic</h2>
-    <h3>example</h3>
+    <h1>对话框 - Modal</h1>
+    <h2>基本</h2>
+    <h3>示例</h3>
     <uk-button @click="open">Open dialog</uk-button>
     <uk-modal title="Example modal"
               ref="dialog">

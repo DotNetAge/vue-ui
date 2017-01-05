@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Pickers</h1>
+    <h1>选择器</h1>
 
-    <h2>Datepicker</h2>
-    <h3>Example</h3>
+    <h2>日期选择器 - Datepicker</h2>
+    <h3>示例</h3>
     <div class="uk-form">
       <uk-datepicker></uk-datepicker>
     </div>
@@ -71,9 +71,9 @@
       </tbody>
     </table>
 
-    <h2>Timepicker</h2>
+    <h2>时间选择器 - Timepicker</h2>
 
-    <h3>Example</h3>
+    <h3>示例</h3>
     <div class="uk-form">
       <uk-timepicker></uk-timepicker>
     </div>

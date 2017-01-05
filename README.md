@@ -1,4 +1,4 @@
-# Vue-UI
+# V-UIKit
 
 这是一套适合中文世界使用的基于 UIKit 和 Vue2 开发的界面套件。
 
@@ -8,14 +8,14 @@
 $ npm i v-uikit -D
 ```
 
-## 注册 VueUI
+## 注册 V-UIKit
 
 ```js
 import Vue from 'vue'
-import VueUI from 'v-uikit'
+import VueUIKit from 'v-uikit'
 import 'v-uikit/dist/v-uikit.css'
 
-Vue.use(VueUI)
+Vue.use(VueUIKit)
 ```
 
 ## 在线示例

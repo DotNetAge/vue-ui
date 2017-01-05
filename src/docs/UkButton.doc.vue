@@ -39,7 +39,8 @@
     </table>
 
 
-    <h2>Button state</h2>
+    <h2>按钮状态</h2>
+
     <uk-button :active="true">Active</uk-button>
     <uk-button :disabled="true">Disabled</uk-button>
 
