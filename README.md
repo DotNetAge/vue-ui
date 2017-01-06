@@ -22,4 +22,4 @@ Vue.use(VueUIKit)
 
 [示例](https://dotnetage.github.io/vue-ui/)
 
-![Vue UI]()
+![Vue UI](shotscreen.png)
