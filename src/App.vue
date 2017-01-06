@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="uk-navbar">
       <div class="uk-container uk-container-center">
-        <a href="" class="uk-navbar-brand">Vue UI</a>
+        <a href="" class="uk-navbar-brand">V-UIKit</a>
         <ul class="uk-navbar-nav">
           <li><a href="https://github.com/DotNetAge/vue-ui" target="_blank">Github</a></li>
           <li><a href="https://www.npmjs.com/package/v-uikit">NPM</a></li>
