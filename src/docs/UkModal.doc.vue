@@ -1,28 +1,35 @@
 <template>
   <div>
-    <h1>对话框 - Modal</h1>
-    <h2>基本</h2>
+    <h1>对话框 - &lt;uk-modal&gt;</h1>
+    <h2>基本用法</h2>
     <h3>示例</h3>
-    <uk-button @click="open">Open dialog</uk-button>
-    <uk-modal title="Example modal"
+    <uk-button @click="open">打开对话框</uk-button>
+    <uk-modal title="对话框标题"
               ref="dialog">
-      Hello world
+      <p>您好！这是一段简单的文字内容</p>
     </uk-modal>
-    <h3>code</h3>
+
+    <h3>代码</h3>
     <code-block>{{usages.basic}}</code-block>
 
-    <h2>Large dialog</h2>
-    <p>Set the <code>:large="true"</code> to change the dialog to larger size</p>
 
-    <h2>Lightbox support</h2>
-    <p>Set the <code>:lightbox="true"</code> to enable the lightbox support</p>
+    <h2>Lightbox 支持</h2>
+    <hr>
+    <p>只要设置 <code>:lightbox="true"</code> 就只会显示一个lightbox样式的图片对话框。</p>
+
+    <code-block>{{usages.lightbox}}</code-block>
     <uk-button @click="$refs.lightboxDlg.open()">Lightbox</uk-button>
-    <uk-modal ref="lightboxDlg" :closable="true" :lightbox="true">
-      <img src="../assets/placeholder_600x400.svg" width="600" height="400" alt="">
+    <uk-modal ref="lightboxDlg"
+              :closable="true"
+              :lightbox="true">
+      <img src="../assets/placeholder_600x400.svg"
+           width="600"
+           height="400" alt="">
     </uk-modal>
 
 
-    <h2>Blank</h2>
+    <h2>全屏页</h2>
+    <hr>
     <p></p>
     <uk-button @click="$refs.blankDlg.open()">Blank</uk-button>
     <uk-modal ref="blankDlg" :closable="true" :blank="true">
@@ -41,23 +48,17 @@
           </div>
         </div>
       </div>
-
     </uk-modal>
 
-    <h2>Center dialog</h2>
-    <p></p>
 
-    <h2>Header and footer</h2>
-    <p></p>
-
-    <h2>属性</h2>
+    <h3>属性</h3>
     <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
-        <th>Option</th>
-        <th>Possible value</th>
-        <th>Default</th>
-        <th>Description</th>
+        <th>属性</th>
+        <th>类型</th>
+        <th>默认值</th>
+        <th>说明</th>
       </tr>
       </thead>
       <tbody>
@@ -65,31 +66,44 @@
         <td><code>keyboard</code></td>
         <td>boolean</td>
         <td>true</td>
-        <td>Allows controls from keyboard (ESC to close)</td>
+        <td>允许使用键盘的ESC键关键对话框</td>
       </tr>
+      <tr>
+        <td><code>lightbox</code></td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>开启lightbox支持</td>
+      </tr>
+      <tr>
+        <td><code>blank</code></td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>开启全屏支持</td>
+      </tr>
+
       <tr>
         <td><code>bgclose</code></td>
         <td>boolean</td>
         <td>true</td>
-        <td>Allow modal to close automatically when clicking on the modal overlay</td>
+        <td>允许点击背景自动关闭对话框。</td>
       </tr>
       <tr>
         <td><code>minScrollHeight</code></td>
         <td>integer</td>
         <td>150</td>
-        <td>Set the height for overflow container to start scrolling</td>
+        <td>设置遮盖层开始滑动的值。</td>
       </tr>
       <tr>
         <td><code>center</code></td>
         <td>boolean</td>
         <td>false</td>
-        <td>Vertically center the modal</td>
+        <td>设计垂直居中</td>
       </tr>
       <tr>
         <td><code>modal</code></td>
         <td>boolean</td>
         <td>true</td>
-        <td>Close currently opened modals on opening modal</td>
+        <td>只能通过点击关闭按钮关闭的模态对话框</td>
       </tr>
       </tbody>
     </table>
@@ -100,11 +114,19 @@
     data () {
       return {
         usages: {
-          basic: `<uk-button @click="open">Open dialog</uk-button>
-    <uk-modal title="Example modal"
-              ref="dialog">
-      Hello world
-    </uk-modal>`
+          basic: `<uk-button @click="$refs.dialog.open()">打开对话框</uk-button>
+<uk-modal title="对话框标题"
+      ref="dialog">
+  <p>您好！这是一段简单的文字内容</p>
+</uk-modal>`,
+          lightbox:`<uk-button @click="$refs.lightboxDlg.open()">Lightbox</uk-button>
+<uk-modal ref="lightboxDlg"
+          :closable="true"
+          :lightbox="true">
+  <img src="../assets/placeholder_600x400.svg"
+       width="600"
+       height="400" alt="">
+</uk-modal>`
         }
       }
     },

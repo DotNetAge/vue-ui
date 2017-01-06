@@ -32,9 +32,7 @@
                   <router-link :to="{name:'Forms'}">表单</router-link>
                 </li>
                 <li>
-                  <router-link :to="{name:'Accordions'}">手风琴</router-link>
-                <li>
-                  <router-link :to="{name:'Panels'}">面板</router-link>
+                  <router-link :to="{name:'HtmlEditors'}">富文本编辑器</router-link>
                 </li>
                 <li>
                   <router-link :to="{name:'Pickers'}">选择器</router-link>
@@ -43,18 +41,20 @@
                   <router-link :to="{name:'Modals'}">对话框</router-link>
                 </li>
                 <li>
-                  <router-link :to="{name:'Uploaders'}">文件上传</router-link>
-                </li>
-                <li>
-                  <router-link :to="{name:'HtmlEditors'}">富文本编辑器</router-link>
-                </li>
-                <li>
-                  <router-link :to="{name:'Offcanvas'}">幕布</router-link>
-                </li>
-                <li>
                   <router-link :to="{name:'Tabs'}">分页容器</router-link>
                 </li>
-
+                <li>
+                  <router-link :to="{name:'Dropdowns'}">下拉框列表</router-link>
+                </li>
+                <li class="uk-disabled">
+                  <router-link :to="{name:'Accordions'}">手风琴</router-link>
+                </li>
+                <li class="uk-disabled">
+                  <router-link :to="{name:'Uploaders'}">文件上传</router-link>
+                </li>
+                <li class="uk-disabled">
+                  <router-link :to="{name:'Offcanvas'}">幕布</router-link>
+                </li>
               </ul>
             </div>
             <div class="uk-width-medium-3-4">
@@ -68,9 +68,6 @@
 </template>
 
 <script>
-  //  import 'uikit/dist/css/uikit.css'
-  //  import 'uikit/dist/css/uikit.almost-flat.css'
-  //  import 'uikit'
   export default {
     name: 'app',
     mounted () {

@@ -1,20 +1,22 @@
 <template>
-  <div data-uk-dropdown="{mode:'click'}"
-       class="uk-button-dropdown">
-    <slot></slot>
-    <div class="uk-dropdown">
+  <div class="uk-form">
+    <input type="text"
+           :name="name"
+           v-model="selectedValue" data-uk-dropdown />
+    <div class="uk-dropdown uk-dropdown-small">
       <ul class="uk-nav uk-nav-dropdown">
-        <li v-for="item in items"
-            :class="{'uk-nav-header':item.isHeader}">
-          <a @click.prevent="selectItem(item)">{{ item[textField] }}</a></li>
+        <li v-for="item in items" @click="selectItem(item)">{{ item[textField] }}</li>
       </ul>
     </div>
+
   </div>
 </template>
 <script>
   export default {
-    name: 'UkDropdown',
     props: {
+      name: {
+        type: String
+      },
       items: {
         type: Array,
         default: () => []

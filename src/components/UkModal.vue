@@ -7,14 +7,15 @@
     'uk-modal-dialog-blank':blank,
     'uk-modal-dialog-large':large
     }">
-      <slot name="header">
+      <slot name="header" v-if="!lightbox">
         <div slot="header" class="uk-modal-header">
           <button class="uk-modal-close uk-close uk-float-right"></button>
           <h3 class="uk-display-inline" v-if="title">{{ title }}</h3>
         </div>
       </slot>
+      <a href="" v-if="lightbox" class="uk-modal-close uk-close uk-close-alt"></a>
       <slot></slot>
-      <slot name="footer"></slot>
+      <slot name="footer" v-if="!lightbox"></slot>
     </div>
   </div>
 </template>

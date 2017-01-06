@@ -16,11 +16,13 @@ import UkButtonDoc from './docs/UkButton.doc.vue'
 import CodeBlock from './docs/CodeBlock.vue'
 import UkCommonDoc from './docs/Common.vue'
 import Forms from './docs/Forms.vue'
-
+import UkDropdownDoc from './docs/UkDropdown.doc.vue'
 Vue.use(VueUI)
 Vue.use(VueRouter)
 Vue.component('code-block', CodeBlock)
 const router = new VueRouter({
+  mode: 'history',
+  base: __dirname,
   routes: [
     {name: 'Pickers', path: '/examples/pickers', component: PickersDoc},
     {name: 'Accordions', path: '/examples/accordions', component: UkAccordionDoc},
@@ -32,7 +34,8 @@ const router = new VueRouter({
     {name: 'Buttons', path: '/examples/buttons', component: UkButtonDoc},
     {name: 'Offcanvas', path: '/examples/offcanvas', component: UkOffcanvasDoc},
     {name: 'Common', path: '/examples/common', component: UkCommonDoc},
-    {name: 'Forms', path: '/examples/forms', component: Forms}
+    {name: 'Forms', path: '/examples/forms', component: Forms},
+    {name: 'Dropdowns', path: '/examples/dropdown', component: UkDropdownDoc}
   ]
 })
 

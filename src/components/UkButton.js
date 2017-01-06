@@ -17,6 +17,9 @@ export default {
     icon: {
       type: String
     },
+    rightIcon:{
+      type:String
+    },
     size: {
       type: String,
       default: ''
@@ -55,7 +58,7 @@ export default {
       <button disabled={ this.disabled }
               on-click={ clickHandler }
               {...data}>
-        <uk-icon name={this.icon}></uk-icon> { this.$slots.default }
+        <uk-icon name={this.icon}></uk-icon> { this.$slots.default } {this.rightIcon && <uk-icon name={this.rightIcon}></uk-icon>}
       </button>)
   }
 }

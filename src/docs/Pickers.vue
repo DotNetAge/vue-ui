@@ -1,14 +1,15 @@
 <template>
   <div>
     <h1>选择器</h1>
-
-    <h2>日期选择器 - Datepicker</h2>
+    <hr>
+    <h2>日期选择器 - &lt;uk-datepicker&gt;</h2>
+    <hr>
     <h3>示例</h3>
     <div class="uk-form">
       <uk-datepicker></uk-datepicker>
     </div>
     <code-block>{{usages.basic}}</code-block>
-    <h3>attributes</h3>
+    <h3>属性</h3>
     <table class="uk-table uk-table-striped uk-table-condensed">
       <thead>
       <tr>
@@ -72,13 +73,14 @@
     </table>
 
 
-    <h2>时间选择器 - Timepicker</h2>
+    <h2>时间选择器 - &lt;uk-timepicker&gt;</h2>
+    <hr>
     <h3>示例</h3>
     <div class="uk-form">
       <uk-timepicker></uk-timepicker>
     </div>
     <code-block>{{usages.timepicker}}</code-block>
-    <h3>attributes</h3>
+    <h3>属性</h3>
     <div class="uk-overflow-container">
       <table class="uk-table uk-table-striped uk-table-condensed">
         <thead>
@@ -111,6 +113,23 @@
         </tbody>
       </table>
     </div>
+
+
+    <!--<h2>对象选择器 - &lt;uk-itempicker&gt;</h2>-->
+    <!--<hr>-->
+    <!--<p>-->
+      <!--<uk-itempicker :items="[-->
+      <!--{label:'item1',value:'item1'},-->
+      <!--{label:'item2',value:'item2'},-->
+      <!--{label:'item3',value:'item3'},-->
+      <!--{label:'item4',value:'item4'},-->
+      <!--{label:'item5',value:'item5'},-->
+      <!--{label:'item6',value:'item6'},-->
+      <!--{label:'item7',value:'item7'}-->
+      <!--]">-->
+      <!--</uk-itempicker>-->
+    <!--</p>-->
+    <!--<hr>-->
   </div>
 </template>
 <script>
