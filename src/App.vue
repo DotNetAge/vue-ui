@@ -46,6 +46,9 @@
                 <li>
                   <router-link :to="{name:'Dropdowns'}">下拉框列表</router-link>
                 </li>
+                <li>
+                  <router-link :to="{name:'Imaging'}">图形图像</router-link>
+                </li>
                 <li class="uk-disabled">
                   <router-link :to="{name:'Accordions'}">手风琴</router-link>
                 </li>
@@ -71,7 +74,7 @@
   export default {
     name: 'app',
     mounted () {
-      this.$router.push({name: 'Buttons'})
+      // this.$router.push({name: 'Buttons'})
     }
   }
 </script>

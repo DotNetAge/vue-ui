@@ -12,37 +12,9 @@
   </div>
 </template>
 <script>
+  import BaseListMixin from './BaseListMixin'
   export default {
     name: 'UkDropdown',
-    props: {
-      items: {
-        type: Array,
-        default: () => []
-      },
-      textField: {
-        type: String,
-        default: 'label'
-      },
-      valueField: {
-        type: String,
-        default: 'value'
-      }
-    },
-    data () {
-      return {
-        selectedItem: undefined
-      }
-    },
-    computed: {
-      selectedValue (){
-        return this.selectedItem ? this.selectedItem[this.valueField] : ''
-      }
-    },
-    methods: {
-      selectItem(item) {
-        this.selectedItem = item
-        this.$emit('change', item)
-      }
-    }
+    mixins: [BaseListMixin]
   }
 </script>

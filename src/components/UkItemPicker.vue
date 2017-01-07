@@ -2,48 +2,21 @@
   <div class="uk-form">
     <input type="text"
            :name="name"
-           v-model="selectedValue" data-uk-dropdown />
+           v-model="selectedValue" data-uk-dropdown/>
     <div class="uk-dropdown uk-dropdown-small">
       <ul class="uk-nav uk-nav-dropdown">
         <li v-for="item in items" @click="selectItem(item)">{{ item[textField] }}</li>
       </ul>
     </div>
-
   </div>
 </template>
 <script>
+  import BaseListMinxin from './BaseListMixin'
   export default {
+    mixins: [BaseListMinxin],
     props: {
       name: {
         type: String
-      },
-      items: {
-        type: Array,
-        default: () => []
-      },
-      textField: {
-        type: String,
-        default: 'label'
-      },
-      valueField: {
-        type: String,
-        default: 'value'
-      }
-    },
-    data () {
-      return {
-        selectedItem: undefined
-      }
-    },
-    computed: {
-      selectedValue (){
-        return this.selectedItem ? this.selectedItem[this.valueField] : ''
-      }
-    },
-    methods: {
-      selectItem(item) {
-        this.selectedItem = item
-        this.$emit('change', item)
       }
     }
   }

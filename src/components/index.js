@@ -24,6 +24,8 @@ import UkForm from './UkForm.vue'
 import UkFormRow from './UkFormRow.vue'
 import UkFormIcon from './UkFormIcon.vue'
 import UkInput from './UkInput.vue'
+import UkThumb from './UkThumb'
+import UkOverlay from './UkOverlay.vue'
 
 export default (Vue, options) => {
   const ui = window.UIkit
@@ -62,5 +64,6 @@ export default (Vue, options) => {
   Vue.component('uk-input', UkInput)
   Vue.component('uk-form', UkForm)
   Vue.component('uk-field', UkFormRow)
-
+  Vue.component('uk-thumbnail', UkThumb)
+  Vue.component('uk-overlay', UkOverlay)
 }
