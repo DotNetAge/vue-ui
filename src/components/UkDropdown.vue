@@ -4,7 +4,7 @@
     <slot></slot>
     <div class="uk-dropdown">
       <ul class="uk-nav uk-nav-dropdown">
-        <li v-for="item in items"
+        <li v-for="item in listItems"
             :class="{'uk-nav-header':item.isHeader}">
           <a @click.prevent="selectItem(item)">{{ item[textField] }}</a></li>
       </ul>

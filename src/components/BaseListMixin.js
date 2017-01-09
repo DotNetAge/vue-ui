@@ -1,17 +1,29 @@
 export default {
   props: {
-    items: {
-      type: Array,
-      default: () => []
+    showLine: {
+      type: Boolean,
+      default: false
     },
-    textField: {
-      type: String,
-      default: 'label'
+    space: {
+      type: Boolean,
+      default: false
     },
-    valueField: {
-      type: String,
-      default: 'value'
+    striped: {
+      type: Boolean,
+      default: false
     }
+  },
+  items: {
+    type: Array,
+    default: () => []
+  },
+  textField: {
+    type: String,
+    default: 'label'
+  },
+  valueField: {
+    type: String,
+    default: 'value'
   },
   data () {
     return {
