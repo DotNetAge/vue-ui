@@ -27,6 +27,8 @@ import UkInput from './UkInput.vue'
 import UkThumb from './UkThumb'
 import UkOverlay from './UkOverlay.vue'
 import UkList from './UkList.vue'
+import {UkSection, UkAccordion} from './UkAccordion'
+import UkUploader from './UkUploader.vue'
 
 export default (Vue, options) => {
   const ui = window.UIkit
@@ -68,4 +70,7 @@ export default (Vue, options) => {
   Vue.component('uk-thumbnail', UkThumb)
   Vue.component('uk-overlay', UkOverlay)
   Vue.component('uk-list', UkList)
+  Vue.component('uk-accordion', UkAccordion)
+  Vue.component('uk-section', UkSection)
+  Vue.component('uk-uploader', UkUploader)
 }

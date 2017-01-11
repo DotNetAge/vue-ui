@@ -1,6 +1,18 @@
 export const UkSection = {
+  props: {
+    title: {
+      type: String
+    }
+  },
   render (h) {
-
+    return <li>
+      <h3 class="uk-accordion-title">
+        {this.title}
+      </h3>
+      <div class="uk-accordion-content">
+        { this.$slots.default }
+      </div>
+    </li>
   }
 }
 
@@ -22,8 +34,9 @@ export const UkAccordion = {
     })
   },
   render (h) {
-    return <div class={{}}>
-
-    </div>
+    return <ul uk-accordion="collapsible:false"
+               class={{'uk-accordion': true}}>
+      {this.$slots.default}
+    </ul>
   }
 }

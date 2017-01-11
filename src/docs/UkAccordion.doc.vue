@@ -2,10 +2,14 @@
   <div>
     <h1>手风琴</h1>
     <hr>
-    <uk-alert color="danger">
-      <uk-icon name="info"></uk-icon>
-      <strong>注:</strong> 持续更新中...
-    </uk-alert>
+    <uk-accordion>
+      <uk-section title="Item1">
+        Here is the section 1 content
+      </uk-section>
+      <uk-section title="Item2">
+        Here is the section 2 content
+      </uk-section>
+    </uk-accordion>
   </div>
 </template>
 <script>
