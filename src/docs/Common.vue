@@ -187,6 +187,56 @@
     </table>
 
 
+    <h2 class="uk-margin-large-top">分页器 - &lt;uk-pager&gt;</h2>
+    <hr>
+    <p>
+      <uk-pager :items="pagerItems"
+                :size="pagerSize"
+                :current="pagerCurrent"></uk-pager>
+    </p>
+
+    <code-block>{{usages.pager}}</code-block>
+    <table class="uk-table uk-table-striped uk-table-condensed">
+      <thead>
+      <tr>
+        <th>属性</th>
+        <th>类型</th>
+        <th>默认值</th>
+        <th class="uk-width-2-6">说明</th>
+        <th>体验</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><code>items</code></td>
+        <td><code>Number</code></td>
+        <td><code>undefined</code></td>
+        <td>数量</td>
+        <td class="uk-form">
+          <input type="number" v-model="pagerItems" min="1" />
+        </td>
+      </tr>
+      <tr>
+        <td><code>size</code></td>
+        <td><code>Number</code></td>
+        <td><code>undefined</code></td>
+        <td>每页显示的数据项</td>
+        <td class="uk-form">
+          <input type="number" v-model="pagerSize" min="1" />
+        </td>
+      </tr>
+      <tr>
+        <td><code>current</code></td>
+        <td><code>Number</code></td>
+        <td><code>undefined</code></td>
+        <td>当前页码</td>
+        <td class="uk-form">
+          <input type="number" v-model="pagerCurrent" min="0" />
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
   </div>
 </template>
 <script>
@@ -202,6 +252,9 @@
         justify: false,
         closable: false,
         size: undefined,
+        pagerSize: 10,
+        pagerItems: 300,
+        pagerCurrent: 2,
         usages: {
           alert: `<uk-alert
   :closable="true|false"
@@ -220,7 +273,10 @@
           },
           badge: {
             basic: `<uk-badge color="success|warning|danger">注意</uk-badge>`
-          }
+          },
+          pager: `<uk-pager :items="300"
+                :size="20"
+                :current="2"></uk-pager>`
         }
       }
     }

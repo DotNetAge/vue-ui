@@ -23,7 +23,7 @@ export default {
       currentPage: this.current
     })
 
-    this.$ui.$(this.$refs.pager).on('select.uk.pagination', (e, pageIndex) => {
+    UIkit.$(this.$refs.pager).on('select.uk.pagination', (e, pageIndex) => {
       this.$emit('pagechanged', pageIndex)
     })
   },

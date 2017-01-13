@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+  import 'uikit/dist/js/components/upload'
   export default {
     props: {
       text: {
@@ -29,7 +30,7 @@
       },
       sizeLimits: {
         type: Number,
-        default: false
+        default: 0
       },
       allow: {
         type: String,
@@ -86,8 +87,8 @@
         }
       }
 
-      UIKit.uploadSelect(this.$refs.uploadSelect, settings)
-      UIKit.uploadDrop(this.$refs.uploadDrop, settings)
+      UIkit.uploadSelect(this.$refs.uploadSelect, settings)
+      UIkit.uploadDrop(this.$refs.uploadDrop, settings)
     }
   }
 </script>
