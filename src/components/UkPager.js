@@ -16,12 +16,23 @@ export default {
       default: 0
     }
   },
+  data () {
+    return {
+      pagination: undefined
+    }
+  },
+  watch: {
+    items (newVal) {
+      this.pagination.option('items', newVal)
+    }
+  },
   mounted () {
-    window.UIkit.pagination(this.$refs.pager, {
+    this.pagination = UIkit.pagination(this.$refs.pager, {
       items: this.items,
       itemsOnPage: this.size,
       currentPage: this.current
     })
+
 
     UIkit.$(this.$refs.pager).on('select.uk.pagination', (e, pageIndex) => {
       this.$emit('pagechanged', pageIndex)

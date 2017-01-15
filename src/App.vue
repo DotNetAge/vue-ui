@@ -44,7 +44,7 @@
                   <router-link :to="{name:'Tabs'}">分页容器</router-link>
                 </li>
                 <li>
-                  <router-link :to="{name:'Dropdowns'}">下拉框列表</router-link>
+                  <router-link :to="{name:'Dropdowns'}">列表</router-link>
                 </li>
                 <li>
                   <router-link :to="{name:'Imaging'}">图形图像</router-link>
